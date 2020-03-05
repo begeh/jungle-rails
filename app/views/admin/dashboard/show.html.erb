@@ -10,7 +10,8 @@
       <h3 style="padding-left: 5em"><%=@categories%></h3>
     </div>
   </div>
-  <div class="row" style="padding-left: 25vw">
-    <%= link_to 'Go to Products List', [:admin, :products] , :class => 'btn btn-primary'%>
+  <div class="row">
+    <%= link_to 'Go to Products List', [:admin, :products] , :class => 'btn btn-primary', :style => 'margin-left: 4.5vw'%>
+    <%= link_to 'Go to Categories List', [:admin, :categories] , :class => 'btn btn-primary', :style => 'margin-left: 30vw'%>
   </div>
 </div>
