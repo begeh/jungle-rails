@@ -1,9 +1,14 @@
 <h1>Login</h1>
-
-<%= form_tag '/login' do %>
-
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
-
-<% end %>
+<div class='container'>
+  <%= form_tag '/login' do %>
+    <div class="row">
+    <div class='col-12-xs'>
+        Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= text_field_tag :email %>
+    </div>
+    <div class='col-12-xs'>
+      Password: <%= password_field_tag :password %>
+    </div>
+  <%= submit_tag "Submit", :class => 'btn btn-primary', :style => 'margin-top: 1em' %>
+  <% end %>
+  </div>
+</div>
